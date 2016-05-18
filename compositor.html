@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>jQuery UI Datepicker functionality</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+	   <link href="css/bootstrap-theme.css" rel="stylesheet">
+	   <link href="css/bootstrap.css" rel="stylesheet">
+	   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	   <link rel="stylesheet" href="test.css">
+	  
+	  <script type="text/javascript" src="jquery-1.12.3.min.js" ></script>
+	  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/npm.js" ></script>
+      <script type="text/javascript" src="test.js"></script>
+	  
+   </head>
+   <body>
+    
+	 <div class="container">
+      <div class="jumbotron ">
+        <h1 class="col-lg-offset-2 col-md-offset-2">Créer un Sénario</h1>
+      </div>
+
+      
+    <div class="row">
+	  
+	   <div id="parentplus" class="col-lg-offset-5 col-md-offset-5"> 
+         <a id="ajouter" href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-plus-sign"></span>
+		 </a>	 
+	   </div>
+			<hr class="style-four">
+	   <!-- partie dynamique -->
+		<div class="row dynamique" >
+		 </div>
+	</div> <!-- /row -->
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	</div>
+	<div class="modal-body">
+	      <div class="input-group">
+             <span class="input-group-btn">
+               <button id="go" class="btn btn-default" data-dismiss="modal" type="button">Go!</button>
+             </span>
+              <input onchange="numerosenario()" id="text" type="text" class="form-control" placeholder="Search for...">
+          </div><!-- /input-group -->
+	</div>
+	</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	</div>
+	  
+      <footer class="footer">
+      </footer>
+
+    </div> <!-- /container -->
+   </body>
+      
+     
+</html>
